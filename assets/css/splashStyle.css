@@ -2,12 +2,12 @@
     --dark-gray: #4e4d50;
     --light-gray: #c5c6c7;
     --light-blue: #5086d6;
-    --dark-blue: #1f2833;
+    --darkest-blue: #1f2833;
     --tan: #b1a296;
 }
 
 ::selection {
-    background-color: var(--dark-blue);
+    background-color: var(--darkest-blue);
     color: var(--tan);
 }
 
@@ -33,7 +33,7 @@ main {
 }
 
 .border {
-    border: 15px solid var(--dark-blue);
+    border: 15px solid var(--darkest-blue);
 }
 
 h1, h3 {
@@ -90,12 +90,12 @@ section, div {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     font-weight: 200;
-    color: var(--dark-blue);
+    color: var(--darkest-blue);
 }
 
 .portfolio-link h3:active {
     border: 3px inset var(--light-blue);
-    background-color: var(--dark-blue);
+    background-color: var(--darkest-blue);
     color: var(--light-blue);
 }
 
