@@ -1,7 +1,7 @@
 :root {
     --dark-gray: #4e4d50;
     --light-gray: #c5c6c7;
-    --light-blue: #66fcf1;
+    --light-blue: #5086d6;
     --dark-blue: #1f2833;
     --tan: #b1a296;
 }
@@ -24,83 +24,30 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
 }
 
-.border {
-    border: 15px solid var(--dark-blue);
-}
-
-h1, h3 {
-    color: var(--dark-gray);
-}
-
-section, div {
+/* Navigation Bar */
+nav {
     display: flex;
-    flex-direction: column;
-}
-/* My name -- top section -- slightly less pronounced than middle section */
-.my-name {
-    padding-top: 3rem;
-    text-align: center;
-    min-height: 20%;
-}
-
-.my-name h1 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-}
-
-/* I'm a -- middle section -- main section; bigger than top */
-.i-am {
-    text-align: center;
+    padding-top: 15px;
+    align-items: center;
     justify-content: center;
-    min-height: 60%;
-    padding-bottom: 5rem;
-}
-
-.i-am h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 8rem;
-}
-
-.i-am h1 span {
-    color: var(--light-blue);
-}
-
-/* button/link design */
-.portfolio-link {
-    text-align: center;
-    min-height: 15%;
-}
-
-.portfolio-link h3 {
-    border: 2px solid var(--dark-blue);
-    background-color: var(--light-blue);
-    max-width: 30%;
-    min-width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
-    color: var(--dark-blue);
+    font-weight: 200;
+    bottom: 0.7rem;
 }
 
-.portfolio-link h3:hover {
-    border: 3px inset var(--light-blue);
-    background-color: var(--dark-blue);
-    color: var(--light-blue);
+ul {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
 }
 
-.portfolio-link h3:active {
-    border: 3px inset var(--dark-blue);
-    background-color: var(--light-gray);
-    color: var(--dark-blue);
+li {
+    margin: 2rem 5rem 2rem 5rem;
 }
 
 a:link {
@@ -112,14 +59,50 @@ a:visited {
     color: inherit;
 }
 
+figure {
+    height: 65vw;
+    width: 100%;
+    background-image: url("../images/diamonds.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+figure .scale {
+    display: flex;
+    height: 60%;
+    width: 30%;
+    margin: auto;
+}
+
+figure .scale img {
+    border: 5px solid var(--dark-blue);
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* the following adjusts the css to fit different sized screens */
 @media screen and (max-width: 900px) {
     body {
         font-size: 15px;
     }
 }
 
+/* this isn't working like horiseon page for some reason. regardless, let's replace the navbar links with a dropdown menu thingy anyway */
 @media screen and (max-width: 400px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
     body {
         font-size: 13px;
     }

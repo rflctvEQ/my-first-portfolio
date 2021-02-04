@@ -1,0 +1,124 @@
+:root {
+    --dark-gray: #4e4d50;
+    --light-gray: #c5c6c7;
+    --light-blue: #5086d6;
+    --dark-blue: #1f2833;
+    --tan: #b1a296;
+}
+
+::selection {
+    background-color: var(--dark-blue);
+    color: var(--tan);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* General color scheming */
+body {
+    background-color: var(--light-gray);
+    font-size: 1.75rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.border {
+    border: 15px solid var(--dark-blue);
+}
+
+h1, h3 {
+    color: var(--dark-gray);
+}
+
+section, div {
+    display: flex;
+    flex-direction: column;
+}
+/* My name -- top section -- slightly less pronounced than middle section */
+.my-name {
+    padding-top: 3rem;
+    text-align: center;
+    min-height: 20%;
+}
+
+.my-name h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+/* I'm a -- middle section -- main section; bigger than top */
+.i-am {
+    text-align: center;
+    justify-content: center;
+    min-height: 60%;
+    padding-bottom: 5rem;
+}
+
+.i-am h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8rem;
+    font-weight: 200;
+}
+
+.i-am h1 span {
+    color: var(--light-blue);
+}
+
+/* button/link design -- occupies the least amount of space on the page */
+.portfolio-link {
+    text-align: center;
+    min-height: 15%;
+}
+
+.portfolio-link h3 {
+    border: 2px solid var(--dark-blue);
+    background-color: var(--light-blue);
+    min-width: 12%;
+    margin-left: 42%;
+    margin-right: 42%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--dark-blue);
+}
+
+.portfolio-link h3:active {
+    border: 3px inset var(--light-blue);
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+/* the following adjusts the css to fit different sized screens */
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {    
+    body {
+        font-size: 13px;
+    }
+}
