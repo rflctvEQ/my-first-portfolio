@@ -21,11 +21,17 @@
             <span
             class="txt-rotate"
             data-period="2000"
-            data-rotate='[ "full-stack web developer.", "writer.", "lifelong learner." ]'></span>
+            data-rotate='[ "full-stack web developer.", "writer.", "learner." ]'></span>
         </h1>
     </section>
     <div class="portfolio-link">
-        <h3><a href="./home.html">view my work</a></h3>
+        <h3>
+        <a href="./home.html">
+          view my work
+          <img src="assets/images/arrow.png" alt="arrow icon" class="unclickedArrow">
+          <img src="assets/images/blueArrow.png" alt="arrow icon when clicked" class="clickedArrow">
+        </a>
+        </h3>
     </div>
 </main>
 
@@ -81,11 +87,6 @@ window.onload = function() {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-//   // INJECT CSS
-  let css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
 };
 
 </script>

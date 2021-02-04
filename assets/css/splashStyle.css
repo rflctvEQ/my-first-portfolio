@@ -78,27 +78,42 @@ section, div {
 /* button/link design -- occupies the least amount of space on the page */
 .portfolio-link {
     text-align: center;
-    min-height: 15%;
+    max-height: 15%;
 }
 
 .portfolio-link h3 {
-    border: 2px solid var(--dark-blue);
-    background-color: var(--light-blue);
+    /* border: 2px solid var(--dark-gray);
+    border-radius: 5px;
+    background-color: var(--light-blue); */
     min-width: 12%;
-    margin-left: 42%;
-    margin-right: 42%;
+    margin-left: 40%;
+    margin-right: 40%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     font-weight: 200;
     color: var(--darkest-blue);
 }
 
+.portfolio-link h3 img {
+    max-width: 45%;
+    max-height: 45%;
+}
+
+.portfolio-link h3 .clickedArrow {
+    display: none;
+}
+
 .portfolio-link h3:active {
-    border: 3px inset var(--light-blue);
-    background-color: var(--darkest-blue);
     color: var(--light-blue);
 }
 
+.portfolio-link:active .unclickedArrow {
+    display: none;
+}
+
+.portfolio-link:active .clickedArrow {
+    display: inline-block;
+}
 
 a:link {
     text-decoration: none;

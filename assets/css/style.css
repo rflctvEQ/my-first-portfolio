@@ -64,10 +64,27 @@ a:visited {
     color: inherit;
 }
 
+/* Big name and mini description */
+.name {
+    color: var(--medium-blue);
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    letter-spacing: .75rem;
+    padding: 3rem 0 2rem 0;
+}
+
+.webdev {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+}
 /* Background image and profile picture dividing the navigation bar from the main content of the page */
 figure {
-    height: 65vw;
-    width: 100%;
+    height: 32.5vw;
+    width: 50%;
     background-image: url("../images/diamonds.png");
     background-size: cover;
     background-position: center;
@@ -76,6 +93,8 @@ figure {
     justify-content: center;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 figure .scale {
@@ -86,7 +105,7 @@ figure .scale {
 }
 
 figure .scale img {
-    border: 5px solid var(--darkest-blue);
+    border: 2px solid var(--darkest-blue);
     border-radius: 50%;
     display: block;
     max-width: 100%;
@@ -100,32 +119,136 @@ figure .scale img {
 /* Section 1: About me */
 .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.about a {
+    color: var(--light-blue);
 }
 
 .about h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
     font-weight: 400;
     color: var(--medium-blue);
-    text-align: right;
-    padding-right: 1rem;
-    padding-left: 2rem;
+    margin: 2rem 4rem;
 }
 
-.about p {
+.about .aboutDev {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
-    font-weight: 200;
-    line-height: 3.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 50%;
+    margin-bottom: 5rem;
+}
+
+.about .aboutWriter {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5rem;
+}
+
+.about .aboutContact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    margin-left: 50%;
+    margin-right: 4rem;
+    margin-bottom: 5rem;
 }
 
 /* Section 2: Projects */
+.projects h1 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--medium-blue);
+    margin: 2rem 4rem;
+}
 
+.projects .bigContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
 
-/* Section 3: Contact me */
+.projects .proDesc {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+}
+
+.projects .proBig {
+    height: 300px;
+    width: 600px;
+    border: 2px solid var(--darkest-blue);
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--light-blue);
+    color: var(--light-gray);
+}
+
+.projects .smallContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.projects .proSmall {
+    height: 150px;
+    width: 250px;
+    border: 2px solid var(--darkest-blue);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 2rem 2rem;
+    background-color: var(--light-blue);
+    color: var(--light-gray);
+}
+
+/* Section 3: Writing */
+.writing h1 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--medium-blue);
+    margin: 2rem 4rem;
+}
+
+.writing h2 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin: 2rem 4rem 1rem 4rem;
+}
+
+.writing p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+    padding: 0 4rem 1rem 4rem;
+}
+
+/* Section 4: Contact me */
 
 
 

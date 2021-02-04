@@ -14,24 +14,28 @@
     <nav>
         <ul>
             <li>
-                <a href="#about">About Me</a>
+                <a href="#about">About</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
-                <a href="#contact">Contact Me</a>
+                <a href="#writing">Writing</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
 </header>
 
+<h1 class="name">Ian Everitt</h1>
+<h2 class="webdev">Full-stack web developer</h2>
+
 <!-- Here's a minimalist background image with my profile picture disecting the navbar from the main content. -->
 <!-- Minimalistic png images taken from cleanpng.com -->
 <figure title="Diamond Background Decoration">
     <div class="scale">
-        <!-- Make image smaller -- Lulu doesn't like it -->
-        <!-- Actually, I should just make the entire figure smaller so that it takes up less space on the page -->
         <img src="assets/images/profile-picture.jpeg" alt="Ian Everitt">
     </div>
 </figure>
@@ -39,18 +43,70 @@
 <!-- Here's the main content of the page divided into three sections: about me, completed and in-progress projects, and contact information -->
 <main>
 <section id="about" class="about">
-    <h1>Hi, I'm Ian Everitt.</h1>
-        <p>
-            Here is some random text that I'm much too tired to actually think about seriously, so none of this will remain in my final product.
-            Nevertheless, I'd like to do some formatting on my page, so this text will serve the function of my "about me" section. Thanks, random
-            nonsense! 
-        </p>
+    <h1>Hi, I'm Ian.</h1>
+    <p class="aboutDev">
+        I'm learning full-stack web development as a student in MSU's Coding Bootcamp. I'm conversant with HTML, CSS,
+        JavaScript, and Google-Fu — the well-known coder language we all use when we're a little stuck. See my
+        <a href="#projects">projects</a> below to see what I've brought to life so far.
+    </p>
+    <p class="aboutWriter">
+        Before embarking on this programming journey, I researched and taught philosophy at Western Michigan University. Writing and thinking about
+        philosophy is still a passion of mine, so be sure to check out my <a href="#writing">writing</a> if you're interested!
+    </p>
+    <p class="aboutContact">
+        Whether you're an employer looking to hire or someone interested in discussing programming or philosphy, please
+        feel free to <a href="#contact">contact me</a> using any of the methods at the bottom of the page. 
+    </p>
 </section>
 <section id="projects" class="projects">
-
+    <h1>My projects</h1>
+    <article class="bigContainer">
+        <section class="proDesc">
+            <p>
+                Here is a description of the projects below. However, I don't have any projects, so I guess it's not true that
+                this is a discription of any projects. Huh. 
+            </p>
+            <p>
+                Project 1 is pretty cool. It's does something, and it's deployed somewhere. The people who use this are
+                possibly happy with it!
+            </p>
+        </section>
+        <div class="proBig">
+            Project 1
+        </div>
+    </article>
+    <article class="smallContainer">
+        <div class="proSmall">
+            Project 2
+        </div>
+        <div class="proSmall">
+            Project 3
+        </div>
+        <div class="proSmall">
+            Project 4
+        </div>
+        <div class="proSmall">
+            Project 5
+        </div>
+    </article>
+</section>
+<section id="writing" class="writing">
+    <h1>Writing</h1>
+    <h2>Publications</h2>
+    <p>
+        As of today, I have only one publication in a book called <em>Greed in Our Everday World</em> (forthcoming). My chapter, 
+        "Greed and Addiction," surveys the conceptual and practical similarities between greed and addiction, and I argue that the
+        differences between common real-life cases turn out to be rather trivial. 
+    </p>
+    <h2>In progress</h2>
+    <p>
+        I'm currently working on a literature review that compiles some of the most recent philosophical and empirical research on 
+        connections between social media, news consumption, and politics. Eventually, I'd like to turn this into an article arguing
+        that we have an epistemic obligation to limit debating politics on and consuming news from social media.
+    </p>
 </section>
 <section id="contact" class="contact">
-
+    
 </section>
 </main>
 </body>
