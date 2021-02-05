@@ -31,24 +31,22 @@ main {
 nav {
     display: flex;
     padding-top: 15px;
-    align-items: center;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 200;
     bottom: 0.7rem;
 }
 
 ul {
-    justify-content: center;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    width: 60%;
+    flex-wrap: wrap;
 }
 
 li {
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 1vw 5vw 1vw 5vw;
 }
 
 li:hover {
@@ -120,6 +118,7 @@ figure .scale img {
 .about {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15rem;
 }
 
 .about a {
@@ -134,53 +133,51 @@ figure .scale img {
     margin: 2rem 4rem;
 }
 
-.about .aboutDev {
+.about p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     font-weight: 100;
     line-height: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.about .aboutDev {
     margin-left: 4rem;
     margin-right: 50%;
-    margin-bottom: 5rem;
 }
 
 .about .aboutWriter {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 2.5rem;
     margin-left: 20%;
     margin-right: 20%;
-    margin-bottom: 5rem;
 }
 
 .about .aboutContact {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 2.5rem;
     margin-left: 50%;
     margin-right: 4rem;
-    margin-bottom: 5rem;
 }
 
 /* Section 2: Projects */
+.projects {
+    background-color: var(--dark-gray);
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
 .projects h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    color: var(--medium-blue);
-    margin: 2rem 4rem;
+    color: var(--light-blue);
+    margin: 4rem 4rem 2rem 4rem;
 }
 
-.projects .bigContainer {
+.projects .big-proj-container {
     display: flex;
     flex-direction: row;
     margin-left: 4rem;
     margin-right: 4rem;
 }
 
-.projects .proDesc {
+.projects .proj-desc {
     display: flex;
     flex-direction: column;
 }
@@ -188,15 +185,16 @@ figure .scale img {
 .projects p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
+    color: var(--light-gray);
     font-weight: 100;
     line-height: 2.5rem;
     padding-right: 2rem;
     padding-bottom: 5rem;
 }
 
-.projects .proBig {
-    height: 300px;
-    width: 600px;
+.projects .proj-big {
+    height: 20vw;
+    width: 52%;
     border: 2px solid var(--darkest-blue);
     border-radius: 15px;
     padding: 10px;
@@ -204,26 +202,31 @@ figure .scale img {
     color: var(--light-gray);
 }
 
-.projects .smallContainer {
+.projects .small-proj-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin: 2rem 0;
+    padding: 2rem;
 }
 
-.projects .proSmall {
-    height: 150px;
-    width: 250px;
+.projects .proj-small {
+    height: 12vw;
+    width: 21%;
     border: 2px solid var(--darkest-blue);
     border-radius: 15px;
     padding: 10px;
-    margin: 2rem 2rem;
+    margin: 2rem;
     background-color: var(--light-blue);
     color: var(--light-gray);
 }
 
 /* Section 3: Writing */
+.writing {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+}
 .writing h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
@@ -249,26 +252,117 @@ figure .scale img {
 }
 
 /* Section 4: Contact me */
+.contact {
+    background-color: var(--dark-gray);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+.contact h1 {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--light-blue);
+    margin: 4rem 4rem 2rem 4rem;
+}
+
+.contact img {
+    margin: 4rem;
+}
 
 
 /* the following adjusts the css to fit different sized screens */
+
+/* This optimizes the page for smaller desktop viewports and tablets in landscape mode */
+
+@media screen and (max-width: 1055px) {
+    .projects .big-proj-container {
+        flex-direction: column;
+    }
+
+    .projects .proj-big {
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+        height: 30vw;
+    }
+
+    .projects .proj-small {
+        width: 35%;
+        height: 20vw;
+    }
+}
+
+/* This optimizes the page for tablets in portrait mode */
 @media screen and (max-width: 900px) {
     body {
         font-size: 15px;
     }
+
+    .projects .big-proj-container {
+        flex-direction: column;
+    }
+
+    .projects .proj-big {
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+        height: 30vw;
+    }
+
+    .projects .proj-small {
+        width: 35%;
+        height: 20vw;
+    }
 }
 
-/* this isn't working like horiseon page for some reason. regardless, let's replace the navbar links with a dropdown menu thingy anyway */
+/* This optimizes the page for phones in portrait mode */
 @media screen and (max-width: 400px) {
     header {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         text-align: center;
     }
     
     body {
         font-size: 13px;
+    }
+
+    nav {
+        font-size: 5vw;
+    }
+
+    .about, .projects, .writing {
+        margin-bottom: 0;
+    }
+
+    .about .aboutDev {
+        margin-left: 4rem;
+        margin-right: 40%;
+    }
+    
+    .about .aboutWriter {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .about .aboutContact {
+        margin-left: 40%;
+        margin-right: 4rem;
+    }
+
+    .contact h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact div {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
