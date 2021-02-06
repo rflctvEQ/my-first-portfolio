@@ -337,6 +337,13 @@ figure .scale img {
         font-size: 5vw;
     }
 
+    figure {
+        height: 47.45vw;
+        width: 73%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .about, .projects, .writing {
         margin-bottom: 0;
     }
