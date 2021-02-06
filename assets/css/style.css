@@ -320,7 +320,7 @@ figure .scale img {
 }
 
 /* This optimizes the page for phones in portrait mode */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     header {
         display: flex;
         flex-direction: column;
