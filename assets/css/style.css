@@ -1,19 +1,20 @@
 :root {
     --dark-gray: #4e4d50;
     --light-gray: #c5c6c7;
-    --light-blue: #5086d6;
-    --medium-blue: #2e5081;
-    --darkest-blue: #1f2833;
+    --light-purple: #8c34ff;
+    --medium-purple: #7510F7;
+    --darkest-purple: #291f33;
     --tan: #b1a296;
 }
 
 ::selection {
-    background-color: var(--darkest-blue);
+    background-color: var(--darkest-purple);
     color: var(--tan);
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* General color scheming */
@@ -50,7 +51,7 @@ li {
 }
 
 li:hover {
-    color: var(--light-blue)
+    color: var(--light-purple)
 }
 
 a:link {
@@ -62,9 +63,9 @@ a:visited {
     color: inherit;
 }
 
-/* Big name and mini description */
+/* Big name */
 .name {
-    color: var(--medium-blue);
+    color: var(--medium-purple);
     text-align: center;
     font-size: 6rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -73,43 +74,12 @@ a:visited {
     padding: 3rem 0 2rem 0;
 }
 
+/* design for "Full-stack web developer" text */
 .webdev {
     text-align: center;
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 200;
-}
-/* Background image and profile picture dividing the navigation bar from the main content of the page */
-figure {
-    height: 32.5vw;
-    width: 50%;
-    background-image: url("../images/diamonds.png");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-figure .scale {
-    display: flex;
-    height: 60%;
-    width: 30%;
-    margin: auto;
-}
-
-figure .scale img {
-    border: 2px solid var(--darkest-blue);
-    border-radius: 50%;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
 }
 
 /* Main */
@@ -118,18 +88,19 @@ figure .scale img {
 .about {
     display: flex;
     flex-direction: column;
+    padding-top: 10rem;
     padding-bottom: 15rem;
 }
 
 .about a {
-    color: var(--light-blue);
+    color: var(--light-purple);
 }
 
 .about h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    color: var(--medium-blue);
+    color: var(--medium-purple);
     margin: 2rem 4rem;
 }
 
@@ -141,16 +112,19 @@ figure .scale img {
     margin-bottom: 5rem;
 }
 
+/* placement of first About paragraph */
 .about .aboutDev {
     margin-left: 4rem;
     margin-right: 50%;
 }
 
+/* placement of second About paragraph */ 
 .about .aboutWriter {
     margin-left: 20%;
     margin-right: 20%;
 }
 
+/* placement of third About paragraph */ 
 .about .aboutContact {
     margin-left: 50%;
     margin-right: 4rem;
@@ -162,11 +136,12 @@ figure .scale img {
     padding-top: 5rem;
     padding-bottom: 15rem;
 }
+
 .projects h1 {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    color: var(--light-blue);
+    color: var(--light-purple);
     margin: 4rem 4rem 2rem 4rem;
 }
 
@@ -192,13 +167,14 @@ figure .scale img {
     padding-bottom: 5rem;
 }
 
-.projects .proj-big {
+/* design for big project box */ 
+.projects .big-link {
     height: 20vw;
     width: 52%;
-    border: 2px solid var(--darkest-blue);
+    border: 2px solid var(--darkest-purple);
     border-radius: 15px;
     padding: 10px;
-    background-color: var(--light-blue);
+    background-color: var(--light-purple);
     color: var(--light-gray);
 }
 
@@ -211,14 +187,15 @@ figure .scale img {
     padding: 2rem;
 }
 
-.projects .proj-small {
+/* design for small project boxes */ 
+.projects .small-link {
     height: 12vw;
     width: 21%;
-    border: 2px solid var(--darkest-blue);
+    border: 2px solid var(--darkest-purple);
     border-radius: 15px;
     padding: 10px;
     margin: 2rem;
-    background-color: var(--light-blue);
+    background-color: var(--light-purple);
     color: var(--light-gray);
 }
 
@@ -231,7 +208,7 @@ figure .scale img {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 4rem;
     font-weight: 400;
-    color: var(--medium-blue);
+    color: var(--medium-purple);
     margin: 2rem 4rem;
 }
 
@@ -265,14 +242,26 @@ figure .scale img {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 3rem;
     font-weight: 400;
-    color: var(--light-blue);
-    margin: 4rem 4rem 2rem 4rem;
+    color: var(--light-purple);
+    margin: 4rem 4rem 1rem 4rem;
+}
+
+.contact p {
+    color: var(--light-gray);
+    margin-left: 4.4rem;
+    line-height: 2.25rem;
 }
 
 .contact img {
     margin: 4rem;
 }
 
+.contact .profile {
+    border: 3px solid var(--dark-gray);
+    border-radius: 50%;
+    width: 160px;
+    margin-top: -1rem;
+}
 
 /* the following adjusts the css to fit different sized screens */
 
@@ -283,14 +272,14 @@ figure .scale img {
         flex-direction: column;
     }
 
-    .projects .proj-big {
+    .projects .big-link {
         margin-right: auto;
         margin-left: auto;
         width: 70%;
         height: 30vw;
     }
 
-    .projects .proj-small {
+    .projects .small-link {
         width: 35%;
         height: 20vw;
     }
@@ -306,14 +295,14 @@ figure .scale img {
         flex-direction: column;
     }
 
-    .projects .proj-big {
+    .projects .big-link {
         margin-right: auto;
         margin-left: auto;
         width: 70%;
         height: 30vw;
     }
 
-    .projects .proj-small {
+    .projects .small-link {
         width: 35%;
         height: 20vw;
     }
@@ -352,7 +341,7 @@ figure .scale img {
         margin-left: 4rem;
         margin-right: 40%;
     }
-    
+
     .about .aboutWriter {
         margin-left: 20%;
         margin-right: 20%;
@@ -363,13 +352,30 @@ figure .scale img {
         margin-right: 4rem;
     }
 
+    .contact .profile {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .contact h1 {
+        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+    }
+
+    .contact p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
 
     .contact div {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .contact img {
+        margin: 3rem;
     }
 }

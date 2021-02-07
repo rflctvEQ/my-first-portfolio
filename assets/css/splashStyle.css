@@ -1,13 +1,14 @@
 :root {
     --dark-gray: #4e4d50;
     --light-gray: #c5c6c7;
-    --light-blue: #5086d6;
-    --darkest-blue: #1f2833;
+    --light-purple: #8c34ff;
+    --medium-purple: #7510F7;
+    --darkest-purple: #291f33;
     --tan: #b1a296;
 }
 
 ::selection {
-    background-color: var(--darkest-blue);
+    background-color: var(--darkest-purple);
     color: var(--tan);
 }
 
@@ -34,7 +35,7 @@ main {
 }
 
 .border {
-    border: 15px solid var(--darkest-blue);
+    border: 15px solid var(--darkest-purple);
 }
 
 h1, h3 {
@@ -73,7 +74,7 @@ section, div {
 }
 
 .i-am h1 span {
-    color: var(--light-blue);
+    color: var(--light-purple);
 }
 
 /* button/link design -- occupies the least amount of space on the page */
@@ -91,7 +92,7 @@ section, div {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     font-weight: 200;
-    color: var(--darkest-blue);
+    color: var(--darkest-purple);
 }
 
 .portfolio-link img {
@@ -104,7 +105,7 @@ section, div {
 }
 
 .portfolio-link h3:active {
-    color: var(--light-blue);
+    color: var(--light-purple);
 }
 
 .portfolio-link:active .unclickedArrow {
