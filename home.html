@@ -9,9 +9,29 @@
 </head>
 <body>
 
-<!-- This is a very minimalistic navigation bar. -->
-<header>
-    <nav>
+<!-- This is a very minimalistic navigation bar for desktop-sized viewports -->
+<nav class="desktop-nav">
+    <ul>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#projects">Projects</a>
+        </li>
+        <li>
+            <a href="#writing">Writing</a>
+        </li>
+        <li class="force-right">
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+<!-- This is a the mobile-version navbar (vegan hamburger, of course)-->
+<nav class="burger">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="assets/images/burger-menu.png" alt="navigation bar icon">
+    </a>
+    <div id="mobile-links">
         <ul>
             <li>
                 <a href="#about">About</a>
@@ -22,16 +42,18 @@
             <li>
                 <a href="#writing">Writing</a>
             </li>
-            <li>
+            <li class="force-right">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-    </nav>
-</header>
+    </div>
+</nav>
 
 <!-- Here are the main headers of the page. -->
-<h1 class="name">IAN EVERITT</h1>
-<h2 class="webdev">Full-stack web developer</h2>
+<section class="title">
+    <h1 class="name">IAN EVERITT</h1>
+    <h2 class="webdev">Full-stack web developer</h2>
+</section>
 
 <!-- Here's the main content of the page divided into three sections: about me, completed and in-progress projects, and contact information -->
 <main>
@@ -144,5 +166,6 @@
     </div>
 </section>
 </main>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
