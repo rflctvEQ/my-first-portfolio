@@ -363,18 +363,22 @@ a:visited {
     
     #mobile-links {
         display: none;
+        margin-right: 4vw;
     }
 
     ul {
         list-style-type: none;
         display: flex;
         flex-direction: column;
+        text-align: right;
     }
 
     .force-right {
         border: none;
         border-radius: none;
         color: var(--dark-gray);
+        text-align: right;
+        margin-right: 0;
         padding: 0;
     }
     
