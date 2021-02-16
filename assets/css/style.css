@@ -1,7 +1,7 @@
 :root {
     --dark-gray: #4e4d50;
     --light-gray: #ececec;
-    --light-purple: #8c34ff;
+    --light-purple: #7750f8;
     --medium-purple: #7510F7;
     --darkest-purple: #291f33;
     --tan: #b1a296;
@@ -271,7 +271,7 @@ a:visited {
     font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
     font-size: 3rem;
     font-weight: 400;
-    color: var(--medium-purple);
+    color: var(--light-purple);
     margin: 4rem 4rem 1rem 4rem;
 }
 
@@ -370,8 +370,21 @@ a:visited {
         flex-direction: column;
     }
 
+    .force-right {
+        border: none;
+        border-radius: none;
+        color: var(--dark-gray);
+        padding: 0;
+    }
+    
+    .force-right:hover {
+        background-color: var(--light-gray);
+        color: var(--dark-gray);
+    }
+
     li {
         font-size: 2rem;
+        line-height: 2.5rem;
     }
 
     .about, .projects, .writing {
